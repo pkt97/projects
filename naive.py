@@ -37,6 +37,6 @@ t1=time()
 print(clf.predict(features_test))
 #print ("Author is",pred)
 print ("testing time is",round(time()-t1,3),"s")
-print ("accuracy is",clf.score(features_test,labels_test1))
+print ("accuracy is",clf.score(features_test,labels_test))
 
 #########################################################

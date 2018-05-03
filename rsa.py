@@ -43,23 +43,26 @@ for i in range(0,phi):
     break
 print("Private key is",d)
 m=int(input("Enter any message:"))
-cipher=pow(m,e)
+cipher=pow(m,d)
 cipher=cipher%n
 print("Cipher text is",cipher)
-plain=pow(cipher,d)
+plain=pow(cipher,e)
 plain=plain%n
 print("Plain text is",plain)
     
 Output:
-Enter first number 2
-Enter second number 13
+Enter first number 5
+Enter second number 7
 5
 7
 11
+13
+17
+19
+23
 Above is/are the possible value/s of e
-Select any value of e: 7
-Private key is 11
-Enter any message: 15
-Cipher text is 7
-Plain text is 15
-
+Select any value of e: 13
+Private key is 23
+Enter any message: 23
+Cipher text is 32
+Plain text is 23

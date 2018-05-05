@@ -43,10 +43,10 @@ for i in range(0,phi):
     break
 print("Private key is",d)
 m=int(input("Enter any message:"))
-cipher=pow(m,d)
+cipher=pow(m,e)
 cipher=cipher%n
 print("Cipher text is",cipher)
-plain=pow(cipher,e)
+plain=pow(cipher,d)
 plain=plain%n
 print("Plain text is",plain)
     

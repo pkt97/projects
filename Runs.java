@@ -35,10 +35,10 @@ for(int j=0;j<5;j++)
 		for(i=1;i<rg.size();i++){
 		sum += rg.get(i)-rg.get(i-1);
 		}
-    System.out.println(rg.toString());
+    System.out.println(rg.toString());//Displaying the random numbers
 		
 System.out.println();
-String form=rg.getClass().getName();
+String form=rg.getClass().getName();//Display format of the number such as 'int','double',etc.
 double mean=0.495;
 if(form=="float")
 {
@@ -51,7 +51,7 @@ else if(form=="int")
 
 System.out.println("Mean is "+mean);
 System.out.println();
-int seq[]=new int[period];
+int seq[]=new int[period];//Array to store the run sequence.
 for(i=0;i<period;i++)
 {
   if(rg.get(i)-mean>0)
@@ -65,19 +65,19 @@ for(i=0;i<period;i++)
 System.out.println("Run sequence is: ");
 for(i=0;i<period;i++)
 {
-  System.out.print(seq[i]);
+  System.out.print(seq[i]);//Displaying the run sequence.
 }
 int runs=0;
 for(i=0;i<period-1;i++)
 {
   if(seq[i]!=seq[i+1])
   {
-    runs+=1;
+    runs+=1;//if continuity of either 0's or1's ends then increment 'runs'
   }
 }
 System.out.println();
 System.out.println();
-System.out.println("Number of runs are "+runs);
+System.out.println("Number of runs are "+runs);//Displaying the number of runs
 int n1=0,n2=0;
 for(i=0;i<period;i++)
 {
